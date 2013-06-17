@@ -2,6 +2,13 @@
 #### Current version = 2.1.9
 #### Last stable version = 2.1.8
 
+####################################
+
+rtorrent 0.9.2 enable ipv6
+libtorrent 0.13.2 enable ipv6
+
+####################################
+
 This is a script I've being working for some time now. I decided to share it here because it has some good things to add:
 
 * A multi-user enviroment, you'll have scripts to add and delete users.
