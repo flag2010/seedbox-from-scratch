@@ -51,7 +51,7 @@ sudo killall rtorrent
 sudo kill -9 `sudo ps aux | grep rtorrent | grep -v grep | awk '{print $2}' | cut -d. -f 1` &> /dev/null
 
 cd /etc/seedbox-from-scratch/source/libtorrent-$LIBTORRENT1
-sudo git clone https://gist.github.com/4538720.git
+sudo wget https://raw.github.com/flag2010/libtorrent-0.13.2-ipv6.patch/master/libtorrent-0.13.2-ipv6.patch
 sudo patch -p1 < libtorrent-0.13.2-ipv6.patch
 sudo ./autogen.sh
 sudo ./configure --enable-ipv6 --prefix=/usr
@@ -59,7 +59,7 @@ sudo make -j2
 sudo make install
 
 cd /etc/seedbox-from-scratch/source/rtorrent-$RTORRENT1
-sudo git clone https://gist.github.com/4538684.git
+sudo wget https://raw.github.com/flag2010/rtorrent-0.9.2-ipv6.patch/master/rtorrent-0.9.2-ipv6.patch
 sudo patch -p1 < rtorrent-0.9.2-ipv6.patch
 sudo ./autogen.sh
 sudo ./configure --enable-ipv6 --prefix=/usr --with-xmlrpc-c
