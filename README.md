@@ -65,7 +65,7 @@ DO NOT try to reconfigure packages using other tutorials.
 Just copy and paste those commands on your terminal:
 
 ```
-wget -N https://raw.github.com/Notos/seedbox-from-scratch/v2.1.9/seedbox-from-scratch.sh
+wget -N https://raw.github.com/flag2010/seedbox-from-scratch/master/seedbox-from-scratch.sh
 time bash ~/seedbox-from-scratch.sh
 ```
 
