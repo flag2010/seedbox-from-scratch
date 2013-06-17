@@ -4,8 +4,8 @@
 
 ####################################
 
-rtorrent 0.9.2 enable ipv6
-libtorrent 0.13.2 enable ipv6
+##########rtorrent 0.9.2 enable ipv6
+##########libtorrent 0.13.2 enable ipv6
 
 ####################################
 
